@@ -1,30 +1,33 @@
 var expression = ""
 var equalsPress = false
 
+var expText = document.getElementById("txt_exp")
+var resText = document.getElementById("txt_res")
+
 function addToExpression(value) {
     if(equalsPress && value.match(/^[0-9]+$/) != null) expression = ""
     expression += value
-    document.getElementById("txt_res").innerHTML = expression
+    resText.innerHTML = expression
     equalsPress = false
 }
 
 function deleteLast(){
     expression = expression.slice(0, expression.length - 1)
-    document.getElementById("txt_res").innerHTML = expression
+    resText.innerHTML = expression
 }
 
 function onEqualsPress() {
     var result = eval(expression)
-    document.getElementById("txt_res").innerHTML = result
-    document.getElementById("txt_exp").innerHTML = expression
+    resText.innerHTML = result
+    expText.innerHTML = expression
     expression = result
     equalsPress = true;
 }
 
 function clearAll() {
     expression = ""
-    document.getElementById("txt_res").innerHTML = ""
-    document.getElementById("txt_exp").innerHTML = ""
+    resText.innerHTML = ""
+    expText.innerHTML = ""
 }
 
 document.getElementById("btnClear").addEventListener("click", clearAll)
