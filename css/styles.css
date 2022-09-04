@@ -4,7 +4,7 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-h3, h5{
+h3, h6{
     margin: 0%;
 }
 
@@ -41,7 +41,7 @@ h3, h5{
 
 .text__exp{
     color: #94979d;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .div__buttons{
@@ -83,4 +83,10 @@ h3, h5{
 .button__calc:hover{
     background-color:#3a3f4b;
     box-shadow: 0 0 32px rgba(33,33,33,.2);
+}
+
+@media only screen and (max-width: 200px) {
+    body{
+        background-color: red;
+    }
 }

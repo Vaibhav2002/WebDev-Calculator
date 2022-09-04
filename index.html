@@ -7,44 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
     <div class="div__calculator">
         <div class="div__result">
-            <h5 class="text text__exp">308 x 42</h5>
-            <h3 class="text text__result">12,936</h3>
+            <h6 id="txt_exp" class="text text__exp">308 x 42</h5>
+            <h3 id="txt_res" class="text text__result">12,936</h3>
         </div>
         <div class="div__buttons">
             <div class="div__buttons--grid">
-                <button class="button__calc button__calc--operator-top">AC</button>
-                <button class="button__calc button__calc--operator-top">+/-</button>
-                <button class="button__calc button__calc--operator-top">%</button>
-                <button class="button__calc button__calc--operator-right">/</button>
-                
-                <button class="button__calc button__calc--number">7</button>
-                <button class="button__calc button__calc--number">8</button>
-                <button class="button__calc button__calc--number">9</button>
-                <button class="button__calc button__calc--operator-right">*</button>
-    
-                <button class="button__calc button__calc--number">4</button>
-                <button class="button__calc button__calc--number">5</button>
-                <button class="button__calc button__calc--number">6</button>
-                <button class="button__calc button__calc--operator-right">-</button>
-    
-                <button class="button__calc button__calc--number">1</button>
-                <button class="button__calc button__calc--number">2</button>
-                <button class="button__calc button__calc--number">3</button>
-                <button class="button__calc button__calc--operator-right">+</button>
-    
-                <button class="button__calc button__calc--delete">X</button>
-                <button class="button__calc button__calc--number">0</button>
-                <button class="button__calc button__calc--dot">.</button>
-                <button class="button__calc button__calc--operator-right">=</button>
+                <button id="btnClear" class="button__calc button__calc--operator-top">AC</button>
+                <button id="btnPlusMinus" class="button__calc button__calc--operator-top">+/-</button>
+                <button id="btnPercent" class="button__calc button__calc--operator-top">%</button>
+                <button id="btnDivide" class="button__calc button__calc--operator-right">/</button>
+
+                <button id="btn7" class="button__calc button__calc--number">7</button>
+                <button id="btn8" class="button__calc button__calc--number">8</button>
+                <button id="btn9" class="button__calc button__calc--number">9</button>
+                <button id="btnMult" class="button__calc button__calc--operator-right">*</button>
+
+                <button id="btn4" class="button__calc button__calc--number">4</button>
+                <button id="btn5" class="button__calc button__calc--number">5</button>
+                <button id="btn6" class="button__calc button__calc--number">6</button>
+                <button id="btnMinus" class="button__calc button__calc--operator-right">-</button>
+
+                <button id="btn1" class="button__calc button__calc--number">1</button>
+                <button id="btn2" class="button__calc button__calc--number">2</button>
+                <button id="btn3" class="button__calc button__calc--number">3</button>
+                <button id="btnAdd" class="button__calc button__calc--operator-right">+</button>
+
+                <button id="btnDelete" class="button__calc button__calc--delete">X</button>
+                <button id="btn0" class="button__calc button__calc--number">0</button>
+                <button id="btnDot" class="button__calc button__calc--dot">.</button>
+                <button id="btnEqual" class="button__calc button__calc--operator-right">=</button>
             </div>
-           
+
         </div>
     </div>
 </body>
+<script src="js/script.js"></script>
 
 </html>
